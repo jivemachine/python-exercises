@@ -1,3 +1,7 @@
 
 
-greetings = print("Hello, world!")
+greetings = 'Hello world!'
+
+
+
+print(greetings)
