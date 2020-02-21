@@ -174,9 +174,17 @@ primes = [number for number in numbers if number in primehelp]
 number = len(students) 
 14
 #How many students prefer light coffee? For each type of coffee roast?
-
+coffee = len([student['coffee_preference'] for student in students if student['coffee_preference'] == 'light']) 
+3 
 #How many types of each pet are there?
+pets = [student['pets'] for student in students]
+nested_pets = sum(pets,[])
+unique_animals = [pet['species'] for pet in nested_pets]
+unique_pets = len(set(unique_animals))
+outputs: 3                                              
 #How many grades does each student have? Do they all have the same number of grades?
+student_grades = [student["grades"] for student in students]                       
+
 #What is each student's grade average?
 #How many pets does each student have?
 #How many students are in web development? data science?
