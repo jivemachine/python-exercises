@@ -84,7 +84,7 @@ while i >= -10:
     i -= 5
 #Create a while loop that starts at 2, and displays the number squared on each line while the number is less than 1,000,000. Output should equal:
 i = 2
-while i <= 1000000:
+while i <= 1_000_000:
     print(i)
     i = i * i
 
@@ -231,14 +231,14 @@ while i <= 100:
      if (i % 3 == 0):
          print("Fizz")
      if (i % 5 == 0):
-         print(Buzz)
+         print("Buzz")
      if (i % 3 == 0 and i % 5 == 0):
          print("FizzBuzz")
 
- for num in range(1,101):
-     if num % 3 == 0 and num % 5 == 0:
-         print("FizzBuzz")
-         continue
+for num in range(1,101):
+    if num % 3 == 0 and num % 5 == 0:
+        print("FizzBuzz")
+        continue
     if num % 3 == 0:
         print("Fizz")
         continue
