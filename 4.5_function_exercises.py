@@ -111,7 +111,52 @@ def normalize_name(string):
 cumsum([1, 1, 1]) returns [1, 2, 3]
 cumsum([1, 2, 3, 4]) returns [1, 3, 6, 10]
 
+def cumsum(num):
+    for n in num:
+        total = 0
+        sums = []
+        newtotal = total + n
+        sums.append(newtotal)
+    return sums
 
+
+    def cumsum(nums):
+        cumlist = []
+        length = len(nums)
+        cumlist = [sum(nums[0 + 1]) for x in range(0, length)
+        return cumlist
+
+numbers = [4,3,6]
+
+sums = []
+
+def cumsum(numbers):
+    sums.append(numbers[0])
+    for i in range(len(numbers) - 1):
+        if i == 0:
+            sums.append(numbers[i] + numbers[i + 1])
+        else:
+            sums.append(numbers[i + 1] + sums[i])
+    return sums
+
+
+def cumsum(num):
+    for n in range(len(num) - 1):
+
+
+
+number = [1,2,3]
+result = []
+total = 0
+
+#This is the answer -----------
+def cumsum(number):
+    result = []
+    total = 0
+    for num in number:
+        total += num
+        result.append(total)
+    return result
 
 # BONUS:
 
@@ -119,6 +164,9 @@ cumsum([1, 2, 3, 4]) returns [1, 3, 6, 10]
 #  It should accept a string in the format 10:45am or 4:30pm and return a string 
 # that is the representation of the time in a 24-hour format. 
 # Bonus write a function that does the opposite.
+
+def twelveto24(time_string):
+
 
 
 # 2 Create a function named col_index. 
