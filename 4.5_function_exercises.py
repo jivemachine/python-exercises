@@ -166,6 +166,19 @@ def cumsum(number):
 # Bonus write a function that does the opposite.
 
 def twelveto24(time_string):
+    if time_string[-2:] == "AM" and time_string[:2] == "12":
+        return "00" + time_string[2:-2]
+    elif time_string[-2:] == "AM":
+        return time_string[:-2]
+    elif time_string[-2:] == "PM" and time_string[:2] == "12":
+        return time_string[:-2]
+    else:
+        return str(int(time_string[:2]) + 12) + time_string[2:8]
+
+
+def twentyfourto12(time_string):
+    if time_string[-2:] == "AM" and time_string[:2] == "12"
+
 
 
 
@@ -174,3 +187,58 @@ def twelveto24(time_string):
 col_index('A') returns 1
 col_index('B') returns 2
 col_index('AA') returns 27
+
+def col_index(column):
+    for column in range(1:28):
+        for letter in letter for column:
+            if letter = a 
+
+
+def col_index(letters):
+    numbers = []
+    for letter in letters:
+        number = ord(letter) - 96
+        number = number.lower()
+        numbers.append(number)
+    return numbers
+
+
+print [ord(char) - 96 for char in raw_input('Write Text: ').lower()]
+
+
+
+def col_index(text):
+    total  = 0
+    nums = [str(ord(x) - 96) for x in text.lower() if x >= 'a' and x <= 'z']
+    newnums = int(nums)
+    for n in newnums:
+        total  = sum(newnums)
+    return total
+
+def alphabet_position(text):
+    dictt = {'a':'1','b':'2','c':'3','d':'4','e':'5','f':'6','g':'7','h':'8',
+    'i':'9','j':'10','k':'11','l':'12','m':'13','n':'14','o':'15','p':'16','q':'17',
+    'r':'18','s':'19','t':'20','u':'21','v':'22','w':'23','x':'24','y':'25','z':'26'
+    }
+    arr = []
+    new_text = text.lower()
+    for i in list(new_text):
+        for k, j in dictt.iteritems():
+            if k == i:
+                arr.append(j)
+    return ' '.join(arr)
+
+
+def col_index(text):
+    x = int(text)
+        if x>=1 and x<=26:
+            print('letter', x, 'in the alphabet:', chr(ord('A')+(x-1)))
+        else:
+            print('invalid input:', x)
+
+
+
+
+
+def col_index(text):
+    total = sum([26**i * list(reversed)])
