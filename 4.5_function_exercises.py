@@ -105,6 +105,15 @@ def normalize_name(string):
     string = string.replace(" ", "_")
     return string
 
+#Zachs answer
+
+def remove_special_characters(string):
+    return ''.join([c for c in string if c.isalnum() or c == ' '])
+
+def normalize_name(string):
+    without_special_chars = remove_special_characters(string)
+    return without_special_chars.lower().strip().replace(' ', '_')
+
 
 # 11 Write a function named cumsum that accepts 
 # a list of numbers and returns a list that is the cumulative sum of the numbers in the list.

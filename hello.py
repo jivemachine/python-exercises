@@ -1,3 +1,0 @@
-
-message = "HARRO!"
-print(message)
