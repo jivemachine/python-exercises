@@ -3,3 +3,4 @@
 __pycache__/
 *.csv
 transactions.txt
+env.py
